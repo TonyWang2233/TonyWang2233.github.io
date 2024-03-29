@@ -28,6 +28,4 @@ jobs:
 
     - name: 运行脚本
       run: |
-        echo "字符串1: ${{ github.event.inputs.string1 }}"
-        echo "字符串2: ${{ github.event.inputs.string2 }}"
-        python your_script.py "${{ github.event.inputs.string1 }}" "${{ github.event.inputs.string2 }}"
+        python ./.github/workflows/concatenate_strings.py "${{ github.event.inputs.string1 }}" "${{ github.event.inputs.string2 }}"
